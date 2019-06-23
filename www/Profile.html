@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/fonts.css">
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+
+<body class="white has-footer">
+    <div class="footer grey shadow tab">
+        <button class="icon ion-android-chat" onclick="openTab('myTabMessages')"></button>
+        <button class="icon ion-android-people" onclick="openTab('myTabGroups')"></button>
+        <button class="icon ion-android-person active" onclick="openTab('myTabAbout')"></button>
+    </div>
+    <div class="tab-content active" id="myTabAbout">
+        <div class="row padding indigo">
+            <div class="col-25 padding">
+                <img class="avatar circle" src="/img/33.jpg" />
+            </div>
+            <div class="col padding">
+                <h1 class="text-big text-light" id="namap"></h1>
+                <p class="text-blue-200" id="nimp"></p>
+                <a href="index.html" style="color: white;float:rigth;">Log Out</a>
+                <a href="index.html" style="color: white;float:rigth;">Log Out</a>
+            </div>
+        </div>
+        <div class="row align-center">
+            <div class="col padding light-blue">
+                <h1 class="text-huge text-strong">12</h1>
+                <p>remaning tasks</p>
+            </div>
+            <div class="col padding pink-400">
+                <h1 class="text-huge text-strong">32</h1>
+                <p>completed tasks</p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content" id="myTabMessages">
+        <div class="list">
+            <div class="item">
+                <div class="left">
+                    <img class="avatar circle" src="img/80.jpg">
+                </div>
+                <div class="right align-top text-small text-green">
+                    13:15
+                </div>
+                <h2 class="text-strong">Jeanette Fletcher</h2>
+                <p class="text-grey-700 ellipsis">Lorem ipsum 😋😋😋 dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor</p>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <img class="avatar circle" src="img/33.jpg">
+                </div>
+                <div class="right align-top text-small">
+                    13:07
+                </div>
+                <h2 class="text-strong">Carter Hudson</h2>
+                <p class="text-grey-700 ellipsis"><i class="icon ion-camera grey"></i> Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <img class="avatar circle" src="img/96.jpg">
+                </div>
+                <div class="right align-top text-small">
+                    12:26
+                </div>
+                <h2 class="text-strong">Juster Mark Slow</h2>
+                <p class="text-grey-700 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor</p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content" id="myTabGroups">
+        <div class="list radius shadow">
+            <div class="item no-border">
+                <div class="left">
+                    <img class="avatar circle" src="img/65.jpg">
+                </div>
+                <h2>Joanne Johnson</h2>
+                <p class="text-grey">Posted a new item for sale.</p>
+                <div class="right text-grey text-small">
+                    2h <i class="icon ion-android-time"></i>
+                </div>
+            </div>
+            <div class="item no-border cover radius" style="background-image:url(/img/bike.png)">
+                <div class="text-small gradient bottom padding text-white text-light radius">
+                    <span class="amber-300 radius padding text-big text-strong">$198</span>
+                    Great for casual weekend outings :)
+                </div>
+            </div>
+            <div class="item no-border row align-center">
+                <div class="col text-red">
+                    <i class="icon ion-heart"></i> 245
+                </div>
+                <div class="col text-grey">
+                    <i class="icon ion-chatbox"></i> 22
+                </div>
+                <div class="col text-grey">
+                    <i class="icon ion-android-share-alt"></i> 65
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/ajaxdb.js"></script>
+    <script>
+        $(document).ready(function () {
+
+        })
+    </script>
+</body>
+
+</html>

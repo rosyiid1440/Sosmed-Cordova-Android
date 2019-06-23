@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <input type="text" id="username">
+    <button id="submit">submit</button>
+
+    <div class="namap" id="namap"></div>
+    <div class="nimp" id="nimp"></div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var user = $('#username').val();
+            $('#submit').click(function () {
+                $.post("http://localhost/tugasakhirwebphp/Profile.php", {
+                        username: username
+                    })
+                    .done(function (data) {
+                        console.log(data);
+                    })
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/fonts.css">
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Register</title>
+</head>
+
+<body class="white" style="overflow:auto;">
+    <div class="pembungkuslogin" id="pembungkuslogin">
+        <div class="pembungkus" style="padding:50px;margin-top:100px;">
+            <h1 style="margin-bottom:20px;">Login</h1>
+            <div class="list">
+                <div class="item">
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="item">
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <div class="item">
+                    <button class="blue radius full" id="login" onclick="loadingElement('login')">
+                        Login
+                    </button>
+                    <p style="text-align: center;margin-top:20px;">Tidak punya akun ? <a href="Register.html"
+                            style="color: blue;">Register</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="editprofile" id="editprofile"></div>
+    <div class="showfollower" id="showfollower"></div>
+    <div class="showfollowing" id="showfollowing"></div>
+
+    <div id="profile">
+        <div class="footer grey shadow tab">
+            <button class="icon ion-android-chat" id="chat" onclick="openTab('myTabMessages')"></button>
+            <button class="icon ion-android-people" id="beranda" onclick="openTab('myTabGroups')"></button>
+            <button class="icon ion-android-person active" id="profilef" onclick="openTab('myTabAbout')"></button>
+        </div>
+        <div class="tab-content active" id="myTabAbout" style="margin-bottom:50px;">
+            <div class="row padding grey-600">
+                <div class="col-25 padding">
+                    <img class="avatar circle" src="img/33.jpg" />
+                </div>
+                <div class="col padding">
+                    <h1 class="text-big text-light" id="namap"></h1>
+                    <p class="text-blue-200" id="nimp" style="text-align: center;"></p>
+                    <a href="index.html" class="text-small grey radius padding right" style="color: white;">Log Out</a>
+                    <button class="text-small grey radius" style="color: white;" id="btneditprofile">Edit
+                        Profile</button>
+                </div>
+            </div>
+            <div class="row align-center">
+                <button id="getfollower" class="col padding grey-300">
+                    <h1 class="text-huge text-strong" id="angkafollower">0</h1>
+                    <p>Follower</p>
+                </button>
+                <button id="getfollowing" class="col padding grey-500">
+                    <h1 class="text-huge text-strong" id="angkafollowing">0</h1>
+                    <p>Following</p>
+                </button>
+            </div>
+            <div class="allstatus" id="allstatus">
+                <div class="status" id="statusarea" style="padding:20px;">
+                    <textarea placeholder="Tuliskan status anda disini !" class="list" id="isi" rows="3"
+                        style="padding:5px;color:grey;"></textarea>
+                </div>
+                <button class="brown border-brown-800 text-brown-50 radius radius-right" id="post"
+                    style="margin-bottom:20px;margin-left:30px;">
+                    Post
+                </button>
+                <div class="getpost" id="getpost">
+                </div>
+            </div>
+            <div class="edit" id="editpost"></div>
+        </div>
+        <div class="tab-content" id="myTabMessages">
+            <div class="chat" id="tampilchat"></div>
+            <div class="mulaichat" id="mulaiichat"></div>
+        </div>
+        <div class="tab-content" id="myTabGroups">
+            <div class="list radius shadow" id="getallpost" style="margin-bottom:50px;">
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/ajaxdb.js"></script>
+</body>
+
+</html>
